@@ -1,0 +1,109 @@
+Code Book
+=================
+
+Since the data is not particularly intuitive, I have kept the original description of how the observations were recorded.
+
+All of the variables in the transformed data set are an average of multiple observations, either an average of the means or the standard deviation observations for each activity. 
+
+Given this combination of features, the descriptions below are based on the aggregate view of observations, with a note to explain that it may be the average of either a mean or standard deviation, and that the observation is either on the X, Y, or Z axis as indicated in the variable name.
+
+===================================================
+Below is a description of how the data was created:
+===================================================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 'Time' to denote time) were captured at a constant rate of 50 Hz. 
+
+Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
+
+Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). 
+
+Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. 
+(Note the 'Freq' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+=====================
+Variable Descriptions
+=====================
+
+SubjectID:
+
+	A numerical ID to identify which subject (1-30) the observation is tied to.
+
+Activity:
+
+	Identification of which activity the subject was doing when the observations were recorded.
+
+AvgTimeBodyAcc-XYZ (_Mean or _StdDev):
+
+	Average of the observations of the mean or standard deviation body acceleration, on the X,  Y, or Z axis from the smartphone.
+
+AvgTimeGravityAcc-XYZ (_Mean or _StdDev):
+	
+	Average of the observations of the mean or standard deviation gravity acceleration, on the X,  Y, or Z axis from the smartphone.
+
+AvgTimeBodyAccJerk-XYZ (_Mean or _StdDev):
+
+	Average of the observations of the mean or standard deviation body acceleration jerk signal, on the X,  Y, or Z axis from the smartphone.
+
+AvgTimeBodyGyro-XYZ (_Mean or _StdDev):
+
+	Average of the observations of the mean or standard deviation body gyroscope signals, on the X,  Y, or Z axis from the smartphone.
+
+AvgTimeBodyGyroJerk-XYZ (_Mean or _StdDev):
+
+	Average of the observations of the mean or standard deviation body gyroscope jerk signals, on the X,  Y, or Z axis from the smartphone.
+
+AvgTimeBodyAccMag (_Mean or _StdDev):
+
+	Average of the magnitude of the body acceleration
+
+AvgTimeGravityAccMag (_Mean or _StdDev):
+
+	Average of the magnitude of the gravity acceleration
+
+AvgTimeBodyAccJerkMag (_Mean or _StdDev):
+
+	Average of the magnitude of the body acceleration jerk signals
+
+AvgTimeBodyGyroMag (_Mean or _StdDev):
+
+	Average of the magnitude of the body gyroscope signals
+
+AvgTimeBodyGyroJerkMag (_Mean or _StdDev):
+	
+	Average of the magnitude of the body gyroscope jerk signals
+
+AvgFreqBodyAcc-XYZ (_Mean or _StdDev)
+
+	Average of the frequency observations of the mean or standard deviation of body acceleration on the X,  Y, or Z axis from the smartphone.
+
+AvgFreqBodyAccJerk-XYZ (_Mean or _StdDev):
+
+	Average of the frequency observations of the mean or standard deviation of body acceleration jerk signals on the X,  Y, or Z axis from the smartphone.
+
+AvgFreqBodyGyro-XYZ (_Mean or _StdDev):
+
+	Average of the frequency observations of the mean or standard deviation of body gyroscope signals on the X,  Y, or Z axis from the smartphone.
+
+AvgFreqBodyAccMag (_Mean or _StdDev):
+
+	Average of the magnitude of the body acceleration
+
+AvgFreqBodyAccJerkMag (_Mean or _StdDev):
+
+	Average of the magnitude of the body acceleration jerk signals
+
+AvgFreqBodyGyroMag (_Mean or _StdDev):
+
+	Average of the magnitude of the gyroscope signals
+
+AvgFreqBodyGyroJerkMag (_Mean or _StdDev):
+
+	Average of the magnitude of the gyroscope jerk signals
+
