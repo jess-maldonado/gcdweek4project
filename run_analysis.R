@@ -1,17 +1,17 @@
 library(tidyverse)
 
-## Setting file names for all the relevant files
-file_testdata <- "~/test/X_test.txt"
-file_testnames <- "~/test/y_test.txt"
-file_traindata <- "~/train/X_train.txt"
-file_trainnames <- "~/train/y_train.txt"
-file_activities <- "~/activity_labels.txt"
-file_features <- "~/features.txt"
-file_subject_test <- "~/test/subject_test.txt"
-file_subject_train <- "~/train/subject_train.txt"
-
-## Set your working directory to where the Samsung data exists
 setwd ("~/DSAcceleratorRepos/GCDataFiles/ProjectFile")
+
+## Setting file names for all the relevant files
+file_testdata <- "./test/X_test.txt"
+file_testnames <- "./test/y_test.txt"
+file_traindata <- "./train/X_train.txt"
+file_trainnames <- "./train/y_train.txt"
+file_activities <- "./activity_labels.txt"
+file_features <- "./features.txt"
+file_subject_test <- "./test/subject_test.txt"
+file_subject_train <- "./train/subject_train.txt"
+
 
 ## Reading in all of the files
 x_test_data <- read.table(file_testdata, header = FALSE)
